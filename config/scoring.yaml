@@ -1,0 +1,12 @@
+# Scoring weights and mathematical models
+base_scale: 10
+penalties:
+  cost:
+    multiplier: 1.5
+    scale: log
+  effort:
+    multiplier: 1.0
+    scale: linear
+limits:
+  critical_reversibility_threshold: 3
+  critical_strategic_alignment_threshold: 4
