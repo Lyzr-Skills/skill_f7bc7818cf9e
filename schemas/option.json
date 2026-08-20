@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Option",
+  "type": "object",
+  "properties": {
+    "option_id": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "expected_impact": { "type": "number", "minimum": 1, "maximum": 10 },
+    "cost": { "type": "number" },
+    "effort": { "type": "number" },
+    "learning_speed": { "type": "number", "minimum": 1, "maximum": 10 },
+    "reversibility": { "type": "number", "minimum": 1, "maximum": 10 },
+    "strategic_alignment": { "type": "number", "minimum": 1, "maximum": 10 },
+    "risk": { "type": "number", "minimum": 1, "maximum": 10 },
+    "evidence_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["option_id", "name", "expected_impact", "cost", "effort", "reversibility"]
+}
