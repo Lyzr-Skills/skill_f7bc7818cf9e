@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SensitivityAnalysis",
+  "type": "object",
+  "properties": {
+    "robustness_score": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+    "runner_up_margin": { "type": "number" },
+    "switching_conditions": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "required": ["robustness_score", "runner_up_margin"]
+}
