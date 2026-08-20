@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DecisionConfidence",
+  "type": "object",
+  "properties": {
+    "level": { "type": "string", "enum": ["HIGH", "MEDIUM", "LOW"] },
+    "evidence_quality_score": { "type": "number" },
+    "option_separation_score": { "type": "number" },
+    "data_completeness_score": { "type": "number" }
+  },
+  "required": ["level", "evidence_quality_score", "option_separation_score"]
+}
