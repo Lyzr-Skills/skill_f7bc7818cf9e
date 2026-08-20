@@ -1,0 +1,37 @@
+# Decision Profiles weights configuration
+
+growth:
+  impact: 0.25
+  confidence: 0.15
+  cost: 0.10
+  effort: 0.10
+  learning_speed: 0.20
+  reversibility: 0.10
+  strategic_alignment: 0.10
+
+strategic:
+  impact: 0.20
+  confidence: 0.20
+  cost: 0.05
+  effort: 0.05
+  learning_speed: 0.10
+  reversibility: 0.10
+  strategic_alignment: 0.30
+
+crisis:
+  impact: 0.15
+  confidence: 0.10
+  cost: 0.05
+  effort: 0.05
+  learning_speed: 0.15
+  reversibility: 0.10
+  strategic_alignment: 0.40
+
+exploration:
+  impact: 0.10
+  confidence: 0.10
+  cost: 0.15
+  effort: 0.10
+  learning_speed: 0.30
+  reversibility: 0.20
+  strategic_alignment: 0.05
