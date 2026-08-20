@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Constraint",
+  "type": "object",
+  "properties": {
+    "constraint_id": { "type": "string" },
+    "parameter": { "type": "string" },
+    "operator": { "type": "string", "enum": ["<=", ">=", "==", "!="] },
+    "value": { "type": "number" }
+  },
+  "required": ["constraint_id", "parameter", "operator", "value"]
+}
