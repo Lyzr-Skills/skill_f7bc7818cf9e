@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DecisionState",
+  "type": "object",
+  "properties": {
+    "current_state": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "INTAKE_COMPLETE",
+        "OPTIONS_VALIDATED",
+        "EVIDENCE_READY",
+        "EVALUATED",
+        "DECISION_READY",
+        "DECIDED",
+        "EXECUTING",
+        "REVIEW",
+        "CLOSED"
+      ]
+    },
+    "updated_at": { "type": "string" }
+  },
+  "required": ["current_state", "updated_at"]
+}
