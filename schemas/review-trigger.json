@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ReviewTrigger",
+  "type": "object",
+  "properties": {
+    "trigger_id": { "type": "string" },
+    "condition_type": { "type": "string" },
+    "threshold": { "type": "string" },
+    "action": { "type": "string" }
+  },
+  "required": ["trigger_id", "condition_type", "action"]
+}
