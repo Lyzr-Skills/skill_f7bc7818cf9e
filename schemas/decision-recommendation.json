@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DecisionRecommendation",
+  "type": "object",
+  "properties": {
+    "decision_id": { "type": "string" },
+    "question": { "type": "string" },
+    "chosen_option": { "type": "string" },
+    "decision_type": { "type": "string" },
+    "confidence": { "type": "string" },
+    "rationale": { "type": "string" },
+    "tradeoffs": { "type": "array" },
+    "rejected_options": { "type": "array" },
+    "key_uncertainties": { "type": "array" },
+    "assumptions": { "type": "array" },
+    "next_action": { "type": "string" },
+    "review_trigger": { "type": "object" },
+    "reversibility": { "type": "string" }
+  },
+  "required": ["decision_id", "question", "chosen_option", "confidence", "rationale", "next_action"]
+}
