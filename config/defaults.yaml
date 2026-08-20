@@ -1,0 +1,11 @@
+# Default configuration parameters
+default_profile: growth
+tolerance_margin: 0.05
+min_options_required: 2
+max_options_limit: 10
+evidence_weight_multiplier:
+  fact: 1.0
+  observed: 0.9
+  inference: 0.6
+  hypothesis: 0.3
+  assumption: 0.1
