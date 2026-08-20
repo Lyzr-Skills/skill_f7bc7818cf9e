@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DecisionVersion",
+  "type": "object",
+  "properties": {
+    "version": { "type": "string" },
+    "timestamp": { "type": "string" },
+    "change_description": { "type": "string" },
+    "previous_version_ref": { "type": "string" }
+  },
+  "required": ["version", "timestamp", "change_description"]
+}
