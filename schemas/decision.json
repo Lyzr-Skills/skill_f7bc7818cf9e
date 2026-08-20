@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Decision",
+  "type": "object",
+  "properties": {
+    "decision_id": { "type": "string" },
+    "question": { "type": "string" },
+    "context_ref": { "type": "string" },
+    "decision_type": { "type": "string" },
+    "options": {
+      "type": "array",
+      "items": { "$ref": "option.json" }
+    },
+    "constraints": {
+      "type": "array",
+      "items": { "$ref": "constraint.json" }
+    },
+    "status": { "type": "string" }
+  },
+  "required": ["decision_id", "question", "options"]
+}
